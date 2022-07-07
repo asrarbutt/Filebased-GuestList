@@ -32,6 +32,10 @@ public class FilebasedTest {
         GuestList party= new GuestList();
         party.setGuests(List.of("Karl", "Ute"));
 
+        List<String> actual=party.getGuests();
+
+        Assertions.assertEquals(List.of("Karl", "Ute"), actual);
+
 
 
 
